@@ -304,8 +304,6 @@ public class ProjectSettingsState implements ProjectSettings {
                 localesDirectory, folderStrategy, parserStrategy, filePattern, includeSubDirs,
                 sorting, saveAsStrings, namespaceDelimiter, sectionDelimiter, contextDelimiter, pluralDelimiter,
                 defaultNamespace, previewLocale, nestedKeys, assistance, alwaysFold, addBlankLine, flavorTemplate, caseFormat
-                sorting, namespaceDelimiter, sectionDelimiter, contextDelimiter, pluralDelimiter,
-                defaultNamespace, previewLocale, nestedKeys, assistance, alwaysFold, addBlankLine, flavorTemplate, caseFormat
         );
     }
 

@@ -67,6 +67,7 @@ public class ProjectSettingsComponent extends ProjectSettingsComponentState {
                 .addComponent(new TitledSeparator(bundle.getString("settings.experimental.title")))
                 .addComponent(constructAlwaysFoldField())
                 .addComponent(constructSaveAsStringsField())
+                .addComponent(constructIsAddBlankLineField())
                 .addVerticalGap(12)
                 .addLabeledComponent(bundle.getString("settings.experimental.flavor-template"), constructFlavorTemplate(), 1, false)
                 .addLabeledComponent(bundle.getString("settings.experimental.key-naming-format.title"), constructKeyCaseFormater(), 1, false)
@@ -242,6 +243,12 @@ public class ProjectSettingsComponent extends ProjectSettingsComponentState {
         KeyCaseFormater.setToolTipText(bundle.getString("settings.experimental.key-naming-format.tooltip"));
         KeyCaseFormater.setMinimumAndPreferredWidth(200);
         return KeyCaseFormater;
+    }
+
+    private JComponent constructIsAddBlankLineField() {
+        addBlankLine = new JBCheckBox(bundle.getString("settings.experimental.add-blank-line.title"));
+        addBlankLine.setToolTipText(bundle.getString("settings.experimental.add-blank-line.tooltip"));
+        return addBlankLine;
     }
 
 

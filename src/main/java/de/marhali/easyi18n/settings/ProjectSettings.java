@@ -58,6 +58,8 @@ public interface ProjectSettings {
     // Experimental Configuration
     boolean isAlwaysFold();
 
+    boolean isAddBlankLine();
+
     String getFlavorTemplate();
 
     @NotNull

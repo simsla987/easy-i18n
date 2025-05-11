@@ -94,6 +94,9 @@ public class SettingsTestPreset implements ProjectSettings {
     }
 
     @Override
+    public boolean isAddBlankLine() { return false; }
+
+    @Override
     public String getFlavorTemplate() {
         return "t";
     }

@@ -28,6 +28,8 @@ public class ProjectSettingsComponentState {
     protected JCheckBox includeSubDirs;
     protected JCheckBox sorting;
     protected JCheckBox saveAsStrings;
+    protected JCheckBox addBlankLine;
+
 
     // Editor configuration
     protected JTextField namespaceDelimiter;
@@ -71,6 +73,7 @@ public class ProjectSettingsComponentState {
         state.setAssistance(assistance.isSelected());
 
         state.setAlwaysFold(alwaysFold.isSelected());
+        state.setAddBlankLine(addBlankLine.isSelected());
 
         state.setFlavorTemplate(flavorTemplate.getText());
 
@@ -101,6 +104,7 @@ public class ProjectSettingsComponentState {
         assistance.setSelected(state.isAssistance());
 
         alwaysFold.setSelected(state.isAlwaysFold());
+        addBlankLine.setSelected(state.isAddBlankLine());
         flavorTemplate.setText(state.getFlavorTemplate());
         KeyCaseFormater.setSelectedItem(state.getCaseFormat().getName());
     }

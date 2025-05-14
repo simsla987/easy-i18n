@@ -42,7 +42,7 @@ public class JsonMapper {
         }
     }
 
-    public static void write(String locale, JsonObject json, TranslationNode node,boolean isSaveAsString) {
+    public static void write(String locale, JsonObject json, TranslationNode node, boolean isSaveAsString) {
         for(Map.Entry<String, TranslationNode> entry : node.getChildren().entrySet()) {
             String key = entry.getKey();
             TranslationNode childNode = entry.getValue();
